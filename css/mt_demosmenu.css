@@ -59,3 +59,16 @@
 .mt_demosmenu__menu-item--mtt-site img {
   max-height: 40px;
 }
+
+/* Add padding top to the colored header region that follows the demosmenu */
+.mt_demosmenu + div .header-container .region--default-background,
+.mt_demosmenu + div .header-container .region--white-background,
+.mt_demosmenu + div .header-container .region--white-background,
+.mt_demosmenu + div .header-container .region--accent-background,
+.mt_demosmenu + div .header-container .region--gray-background,
+.mt_demosmenu + div .header-container .region--dark-gray-background,
+.mt_demosmenu + div .header-container .region--colored-background,
+.mt_demosmenu + div .header-container .region--dark-background,
+.mt_demosmenu + div .header-container .region--black-background {
+  padding-top: 20px;
+}
