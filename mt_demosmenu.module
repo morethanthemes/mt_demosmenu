@@ -47,21 +47,11 @@ function mt_demosmenu_theme()
  */
 function mt_demosmenu_page_attachments(array &$attachments) {
 
-  $config = \Drupal::config('mt_demosmenu.settings');
-
-  // Set data to drupal settings.
-  // $attachments['#attached']['drupalSettings']['mt_demosmenu']['expiration_date'] = $config->get('expiration_date');
-
   // Attach library.
   $attachments['#attached']['library'][] = 'mt_demosmenu/mt_demosmenu';
 }
 
 function mt_demosmenu_page_top(array &$page_top) {
-
-//  $page_top['mt_demosmenu'] = [
-//    '#markup' => 'This is again the top.',
-//  ];
-//  return;
 
   // Create configs array.
   $config = \Drupal::config('mt_demosmenu.settings');
