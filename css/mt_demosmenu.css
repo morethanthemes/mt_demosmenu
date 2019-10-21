@@ -2,13 +2,13 @@
  * MT Demos Menu styles
  *  Add any module related style here
  */
-.mt_demosmenu {
+.mt-demosmenu {
   position: relative;
   z-index: 200;
   -webkit-box-shadow: 0 3px 15px rgba(0,0,0,0.5);
   box-shadow: 0 3px 15px rgba(0,0,0,0.5);
 }
-.mt_demosmenu__menu {
+.mt-demosmenu__menu {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -20,14 +20,14 @@
   list-style-type: none;
   background-color: #748ca6;
 }
-.mt_demosmenu__menu-item {
+.mt-demosmenu__menu-item {
   flex-grow: 1;
   border-left: 1px solid #FFFFFF;
 }
-.mt_demosmenu__menu-item:first-of-type {
+.mt-demosmenu__menu-item:first-of-type {
   border-left: 0;
 }
-.mt_demosmenu__menu-item a {
+.mt-demosmenu__menu-item a {
   font-size: 18px;
   line-height: 20px;
   height: 100%;
@@ -38,9 +38,9 @@
   padding: 20px;
   border-bottom: 0;
 }
-.mt_demosmenu__menu-item a:hover,
-.mt_demosmenu__menu-item a:active,
-.mt_demosmenu__menu-item a:focus {
+.mt-demosmenu__menu-item a:hover,
+.mt-demosmenu__menu-item a:active,
+.mt-demosmenu__menu-item a:focus {
   background-color: #8da1b6;
   color: #FFF;
   text-decoration: none;
@@ -48,15 +48,15 @@
 }
 
 /* Logo item specific styling */
-.mt_demosmenu__menu-item--mtt-site {
+.mt-demosmenu__menu-item--mtt-site {
   flex-grow: 0;
 }
-.mt_demosmenu__menu-item--mtt-site a {
+.mt-demosmenu__menu-item--mtt-site a {
   height: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.mt_demosmenu__menu-item--mtt-site img {
+.mt-demosmenu__menu-item--mtt-site img {
   max-height: 40px;
 }
 
