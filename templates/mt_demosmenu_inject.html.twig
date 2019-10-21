@@ -2,9 +2,9 @@
   <div class="mt-demosmenu">
     <ul class="mt-demosmenu__menu">
       {% if links|length > 0 %}
+        <li class="mt-demosmenu__menu-item mt-demosmenu__menu-item--mtt-site"><a class="px-3 px-md-5" href="https://www.morethanthemes.com/?utm_source=drupalizing-demos&utm_medium=demo-menu&utm_campaign=free-themes" target="_blank"><img src="https://morethanthemes.com/sites/default/files/mtt_themes_logo_linkedin.png" alt="More Than Themes logo"></a></li>
         {% for link in links %}
           <li class="mt-demosmenu__menu-item mt-demosmenu__menu-item--free"><a href="{{ link.1 }}" target="_blank">{{ link.0 }}</a></li>
-          <li>{{ user.username|e }}</li>
         {% endfor %}
       {% else %}
         <li class="mt-demosmenu__menu-item mt-demosmenu__menu-item--mtt-site"><a class="px-3 px-md-5" href="https://www.morethanthemes.com/?utm_source=drupalizing-demos&utm_medium=demo-menu&utm_campaign=free-themes" target="_blank"><img src="https://morethanthemes.com/sites/default/files/mtt_themes_logo_linkedin.png" alt="More Than Themes logo"></a></li>
