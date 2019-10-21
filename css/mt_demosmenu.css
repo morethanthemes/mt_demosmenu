@@ -60,15 +60,16 @@
   max-height: 40px;
 }
 
-/* Add padding top to the colored header region that follows the demosmenu */
-.mt_demosmenu + div .header-container .region--default-background,
-.mt_demosmenu + div .header-container .region--white-background,
-.mt_demosmenu + div .header-container .region--white-background,
-.mt_demosmenu + div .header-container .region--accent-background,
-.mt_demosmenu + div .header-container .region--gray-background,
-.mt_demosmenu + div .header-container .region--dark-gray-background,
-.mt_demosmenu + div .header-container .region--colored-background,
-.mt_demosmenu + div .header-container .region--dark-background,
-.mt_demosmenu + div .header-container .region--black-background {
+/* Add padding top to the colored header region is at the top of the page */
+.page-container > div .region--dark-typography,
+.page-container > div .region--light-typography {
   padding-top: 20px;
+}
+.page-container > div .region--dark-typography + div .region--dark-typography,
+.page-container > div .region--light-typography + div .region--dark-typography,
+.page-container > div .region--dark-typography + div .region--light-typography,
+.page-container > div .region--light-typography + div .region--light-typography,
+.page-container > div .region--dark-typography.js-fixed,
+.page-container > div .region--light-typography.js-fixed {
+  padding-top: 0;
 }
