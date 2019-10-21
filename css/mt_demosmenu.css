@@ -22,7 +22,7 @@
 }
 .mt-demosmenu__menu-item {
   flex-grow: 1;
-  border-left: 1px solid #FFFFFF;
+  border-left: 1px solid HSLA(0, 0%, 100%, 0.4);
 }
 .mt-demosmenu__menu-item:first-of-type {
   border-left: 0;
@@ -37,6 +37,11 @@
   text-align: center;
   padding: 20px;
   border-bottom: 0;
+}
+@media (max-width: 767px) {
+  .mt-demosmenu__menu-item a {
+    font-size: 14px;
+  }
 }
 .mt-demosmenu__menu-item a:hover,
 .mt-demosmenu__menu-item a:active,
