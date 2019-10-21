@@ -4,5 +4,5 @@
  */
 function mt_demosmenu_install() {
   // Set default values for config which require dynamic values.
-//  \Drupal::configFactory()->getEditable('mt_demosmenu.settings')->set('expiration_date', date('Y-m-d H:i'))->save();
+  // \Drupal::configFactory()->getEditable('mt_demosmenu.settings')->set('inject_in_the_body', 1)->save();
 }

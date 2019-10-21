@@ -3,7 +3,6 @@
 namespace Drupal\mt_demosmenu\Form;
 
 use Drupal;
-use Drupal\Core\Datetime\DrupalDateTime;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
@@ -40,8 +39,6 @@ class MTDemosMenuSettingsForm extends ConfigFormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
 
     $config = $this->config('mt_demosmenu.settings');
-    $date = $config->get('expiration_date');
-    $date_time = date("Y-m-d H:i:s", strtotime($date));
 
     $form['links'] = [
       '#title' => $this->t('Menu items'),
