@@ -3,8 +3,6 @@ mt_demosmenu:
   css:
     theme:
       css/mt_demosmenu.css: {}
-  js:
-    js/mt_demosmenu.js: {}
   dependencies:
     - core/drupal
     - core/drupalSettings
