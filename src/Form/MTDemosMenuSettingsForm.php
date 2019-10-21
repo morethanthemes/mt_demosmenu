@@ -53,11 +53,11 @@ class MTDemosMenuSettingsForm extends ConfigFormBase {
 
 
     $form['inject_in_the_body'] = [
-      '#prefix' => $this->t('Inject in the body'),
+      '#title' => $this->t('Inject in the body'),
+      '#description' => $this->t('Inject the menu component in the body element (page_top) of all pages'),
       '#type' => 'checkbox',
       '#required' => FALSE,
       '#default_value' => $config->get('inject_in_the_body'),
-      '#suffix' => $this->t('Inject the menu component in the body element (page_top) of the front page'),
     ];
 
     return parent::buildForm($form, $form_state);
