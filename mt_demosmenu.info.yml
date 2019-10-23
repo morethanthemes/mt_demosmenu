@@ -2,6 +2,7 @@ name: Drupalizing Menu
 description: Menu to free and premium themes for drupalizing demos.
 package: More than Themes
 type: module
+version: 8.x-1.0
 core: 8.x
 configure: mt_demosmenu.settings
 dependencies:
